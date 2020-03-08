@@ -8,10 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		DCAE4026241341110095B3F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAE4025241341110095B3F3 /* main.swift */; };
+		DCAE4033241341490095B3F3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCAE4032241341490095B3F3 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		DCAE4020241341110095B3F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DCAE402E241341490095B3F3 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -25,10 +35,20 @@
 /* Begin PBXFileReference section */
 		DCAE4022241341110095B3F3 /* distanceTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = distanceTest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCAE4025241341110095B3F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DCAE4030241341490095B3F3 /* testSort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testSort; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAE4032241341490095B3F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		DCAE403724134B250095B3F3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DCAE401F241341110095B3F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAE402D241341490095B3F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +61,9 @@
 		DCAE4019241341110095B3F3 = {
 			isa = PBXGroup;
 			children = (
+				DCAE403724134B250095B3F3 /* README.md */,
 				DCAE4024241341110095B3F3 /* distanceTest */,
+				DCAE4031241341490095B3F3 /* testSort */,
 				DCAE4023241341110095B3F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				DCAE4022241341110095B3F3 /* distanceTest */,
+				DCAE4030241341490095B3F3 /* testSort */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +83,14 @@
 				DCAE4025241341110095B3F3 /* main.swift */,
 			);
 			path = distanceTest;
+			sourceTree = "<group>";
+		};
+		DCAE4031241341490095B3F3 /* testSort */ = {
+			isa = PBXGroup;
+			children = (
+				DCAE4032241341490095B3F3 /* main.swift */,
+			);
+			path = testSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +113,23 @@
 			productReference = DCAE4022241341110095B3F3 /* distanceTest */;
 			productType = "com.apple.product-type.tool";
 		};
+		DCAE402F241341490095B3F3 /* testSort */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAE4034241341490095B3F3 /* Build configuration list for PBXNativeTarget "testSort" */;
+			buildPhases = (
+				DCAE402C241341490095B3F3 /* Sources */,
+				DCAE402D241341490095B3F3 /* Frameworks */,
+				DCAE402E241341490095B3F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testSort;
+			productName = testSort;
+			productReference = DCAE4030241341490095B3F3 /* testSort */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +141,9 @@
 				ORGANIZATIONNAME = xxx;
 				TargetAttributes = {
 					DCAE4021241341110095B3F3 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					DCAE402F241341490095B3F3 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -111,6 +162,7 @@
 			projectRoot = "";
 			targets = (
 				DCAE4021241341110095B3F3 /* distanceTest */,
+				DCAE402F241341490095B3F3 /* testSort */,
 			);
 		};
 /* End PBXProject section */
@@ -121,6 +173,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCAE4026241341110095B3F3 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAE402C241341490095B3F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAE4033241341490095B3F3 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +318,24 @@
 			};
 			name = Release;
 		};
+		DCAE4035241341490095B3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DCAE4036241341490095B3F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +353,15 @@
 			buildConfigurations = (
 				DCAE402A241341110095B3F3 /* Debug */,
 				DCAE402B241341110095B3F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCAE4034241341490095B3F3 /* Build configuration list for PBXNativeTarget "testSort" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAE4035241341490095B3F3 /* Debug */,
+				DCAE4036241341490095B3F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
